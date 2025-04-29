@@ -1,1 +1,65 @@
-/* Add your code here */
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    overflow: fill;
+    display: flex;
+    position: sticky;
+    justify-content: flex-end;
+
+}
+
+.navbar ul  {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+}
+.navbar li a:hover {
+    text-decoration: underline;
+    background-color: darkmagenta;
+}
+
+@media screen and (max-width: 600px) {
+    
+    .card-container {
+
+        display: center;
+        margin-left: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 20px;
+        flex-wrap: nowrap; /* prevent wrapping */
+        overflow-x: auto; /* optional: allow horizontal scroll */
+    }
+}
+
+.card{
+    display: inline-block;
+    text-align: center;
+    background-color: lightgray;
+    border-style: solid;
+    border-color: black;
+    width: 30%;
+    height: 700px;
+    content: fit;
+}
+
+.card img{
+    width: 100px;
+    height: 50px;
+    object-fit: cover;
+    
+}
